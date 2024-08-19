@@ -1,0 +1,19 @@
+//out
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100vw;
+    height: 12vh;
+    background: red;
+    ul{
+        li{
+            display: flex;
+            margin: 0 20px;
+            align-items: center;
+            
+        }
+    }
+}
