@@ -143,7 +143,24 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="home-page/index.html" method="post">
+    <?php
+
+if($_POST["username"]=="kamal" && $_POST["password"]=="2002")
+{
+SESSION_START();
+$_SESSION["log.html"]="yes";
+echo "you have correct";
+header('location:home-page/index.html');
+}
+else
+{
+SESSION_START();
+$_SESSION["login"]="no";
+header('location:index.html');
+}
+?>
+
+    <form action="index.html" method="post">
         <h3> تـسـجـيـل الـدخـول </h3>
 
         <label for="username">إســــم الــمــســتـــخــدم</label>
