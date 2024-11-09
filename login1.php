@@ -15,7 +15,7 @@ if($_POST["username"]=="kamal" && $_POST["password"]=="2002")
 SESSION_START();
 $_SESSION["log.html"]="yes";
 echo "you have correct";
-header('location:aramex.php');
+header('location:home-page/index.html');
 }
 else
 {
@@ -24,6 +24,7 @@ $_SESSION["login"]="no";
 header('location:index.html');
 }
 ?>
+
 </body>
 
 </html>
