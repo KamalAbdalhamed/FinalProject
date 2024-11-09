@@ -15,16 +15,15 @@ if($_POST["username"]=="kamal" && $_POST["password"]=="2002")
 SESSION_START();
 $_SESSION["log.html"]="yes";
 echo "you have correct";
-header('location:home-page/index.html');
+header('location:aramex.php');
 }
 else
 {
 SESSION_START();
 $_SESSION["login"]="no";
-header('location:login.php');
+header('location:index.html');
 }
 ?>
-
 </body>
 
 </html>
