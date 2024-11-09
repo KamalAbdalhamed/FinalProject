@@ -148,19 +148,19 @@
 if($_POST["username"]=="kamal" && $_POST["password"]=="2002")
 {
 SESSION_START();
-$_SESSION["log.html"]="yes";
+$_SESSION["login1.php"]="yes";
 echo "you have correct";
 header('location:home-page/index.html');
 }
 else
 {
 SESSION_START();
-$_SESSION["login"]="no";
-header('location:index.html');
+$_SESSION["login1.php"]="no";
+header('location:login.php');
 }
 ?>
 
-    <form action="index.html" method="post">
+    <form action="login1.php" method="post">
         <h3> تـسـجـيـل الـدخـول </h3>
 
         <label for="username">إســــم الــمــســتـــخــدم</label>
