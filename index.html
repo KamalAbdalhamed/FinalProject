@@ -144,22 +144,6 @@
         <div class="shape"></div>
     </div>
     <?php
-
-if($_POST["username"]=="kamal" && $_POST["password"]=="2002")
-{
-SESSION_START();
-$_SESSION["login1.php"]="yes";
-echo "you have correct";
-header('location:home-page/index.html');
-}
-else
-{
-SESSION_START();
-$_SESSION["login1.php"]="no";
-header('location:index.html');
-}
-?>
-
     <form action="login1.php" method="post">
         <h3> تـسـجـيـل الـدخـول </h3>
 
